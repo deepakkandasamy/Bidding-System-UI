@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="612.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.View.BidDialogueController">
+   <children>
+      <Label layoutX="42.0" layoutY="46.0" stylesheets="@DarkTheme.css" text="Enter New Bid:">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newbid" layoutX="202.0" layoutY="27.0" />
+      <ButtonBar layoutX="351.0" layoutY="126.0" prefHeight="40.0" prefWidth="247.0">
+        <buttons>
+          <Button fx:id="ret" mnemonicParsing="false" onAction="#handleCancel" text="Return" />
+            <Button fx:id="bid" mnemonicParsing="false" onAction="#handleBid" text="Bid" />
+        </buttons>
+      </ButtonBar>
+      <Label layoutX="42.0" layoutY="76.0" text="Enter your name:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="biddername" layoutX="202.0" layoutY="68.0" />
+   </children>
+</AnchorPane>
